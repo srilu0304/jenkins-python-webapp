@@ -18,7 +18,7 @@ pipeline {
 
     stage('ping app') {
       steps {
-        bat 'sleep 5 && curl http://localhost:5000'
+        bat 'curl http://localhost:5000'
       }
     }
 
