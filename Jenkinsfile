@@ -12,7 +12,7 @@ pipeline {
 
     stage('run app') {
       steps {
-        bat 'nohup python app.py &'
+        bat 'start /B python app.py'
       }
     }
 
