@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Install Requirements') {
       steps {
-        bat 'pip install -r requirements'
+         bat 'python -m pip install -r requirements.txt'
       }
     }
 
